@@ -25,7 +25,7 @@ SECRET_KEY = 'django-insecure-orham#oo=p^_megn=etec^h&-851x8-s3r#e7ta+5x!nsfjwky
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ['https://8000-groundbuilder-granbodaga-6zfvg4uq1c.us2.codeanyapp.com/',]
+ALLOWED_HOSTS = ['8000-groundbuilder-granbodaga-6zfvg4uq1c.us2.codeanyapp.com', ]
 
 
 # Application definition
