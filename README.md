@@ -46,9 +46,9 @@ Commands:
 
 # Install program in gitpod and codeanywhere
 
-pip3 install 'django<4' gunicorn <br>
-django-admin startproject granbodagard . <br>
-pip3 install django-allauth <br>
+pip3 install 'django<4' gunicorn - done<br>
+django-admin startproject granbodagard . -  done<br>
+pip3 install django-allauth - done<br>
 pip3 install dj_database_url psycopg2 <br>
 pip3 install dj3-cloudinary-storage <br>
 pip3 install django-crispy-forms <br>
