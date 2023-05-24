@@ -30,7 +30,7 @@ ALLOWED_HOSTS = [
     'https://8000-groundbuilder-granbodaga-jthgq8252y.us2.codeanyapp.com', 'https://groundbuilder-granbodaga-jthgq8252y.us2.codeanyapp.com:8000/', 'https://8000-groundbuilder-granbodaga-jthgq8252y.us2.codeanyapp.com/admin/login/?next=/admin/', '8000-groundbuilder-granbodaga-jthgq8252y.us2.codeanyapp.com', 'https://8000-groundbuilder-granbodaga-jthgq8252y.us2.codeanyapp.com', ]
 
 
-CSRF_TRUSTED_ORIGINS=['https://8000-groundbuilder-granbodaga-jthgq8252y.us2.codeanyapp.com/*',]
+CSRF_TRUSTED_ORIGINS=['https://8000-groundbuilder-granbodaga-jthgq8252y.us2.codeanyapp.com/*', 'https://8000-groundbuilder-granbodaga-jthgq8252y.us2.codeanyapp.com/accounts/login/*', ]
 
 # Application definition
 
