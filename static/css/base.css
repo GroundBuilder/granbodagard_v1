@@ -1,8 +1,10 @@
 body {
-    background-color: #555;
+    background-color: #000;
 }
 
 div {
     background-color: #000;
-    
+    font-size: large;
+    border-left: 40px solid;
+
 }

@@ -1,12 +1,20 @@
 {% extends "base.html" %}
 {% load static %}
 
+{% block page_header %}
+<div class="container header-container">
+    <div class="row">
+        <div class="col"></div>
+    </div>
+</div>
+{% endblock %}
+
 {% block content %}
 
 <div class="container-fluid px-4 text-center">
     <div class="row gx-5">
         <div class="col">
-            <div class="p-3 border bg-light">Custom column padding</div>
+            <div class="p-3 border bg-light">Main image whit text</div>
         </div>
     </div>
 </div>
@@ -14,13 +22,14 @@
 <div class="container-fluid px-4 text-center">
     <div class="row gx-5">
         <div class="col">
-            <div class="p-3 border bg-light">Custom column padding</div>
+            <div class="p-3 border bg-light">Courses image with text</div>
         </div>
         <div class="col">
-            <div class="p-3 border bg-light">Custom column padding</div>
+            <div class="p-3 border bg-light">About us with text</div>
         </div>
     </div>
 </div>
+
 
 <h1 class="display-4 text-success">It workds</h1>
 {% endblock %}

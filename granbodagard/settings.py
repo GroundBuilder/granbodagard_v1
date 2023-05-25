@@ -27,10 +27,10 @@ SECRET_KEY = 'django-insecure-orham#oo=p^_megn=etec^h&-851x8-s3r#e7ta+5x!nsfjwky
 DEBUG = True
 
 ALLOWED_HOSTS = [
-    'https://8000-groundbuilder-granbodaga-jthgq8252y.us2.codeanyapp.com', 'https://groundbuilder-granbodaga-jthgq8252y.us2.codeanyapp.com:8000/', 'https://8000-groundbuilder-granbodaga-jthgq8252y.us2.codeanyapp.com/admin/login/?next=/admin/', '8000-groundbuilder-granbodaga-jthgq8252y.us2.codeanyapp.com', 'https://8000-groundbuilder-granbodaga-jthgq8252y.us2.codeanyapp.com', ]
+    'https://8000-groundbuilder-granbodaga-e8nb80j0mj.us2.codeanyapp.com', 'https://groundbuilder-granbodaga-e8nb80j0mj.us2.codeanyapp.com:8000/', 'https://8000-groundbuilder-granbodaga-e8nb80j0mj.us2.codeanyapp.com/admin/login/?next=/admin/', '8000-groundbuilder-granbodaga-e8nb80j0mj.us2.codeanyapp.com', 'https://8000-groundbuilder-granbodaga-e8nb80j0mj.us2.codeanyapp.com', ]
 
 
-CSRF_TRUSTED_ORIGINS=['https://8000-groundbuilder-granbodaga-jthgq8252y.us2.codeanyapp.com/*', 'https://8000-groundbuilder-granbodaga-jthgq8252y.us2.codeanyapp.com/accounts/login/*', ]
+CSRF_TRUSTED_ORIGINS=['https://8000-groundbuilder-granbodaga-e8nb80j0mj.us2.codeanyapp.com/*', 'https://8000-groundbuilder-granbodaga-e8nb80j0mj.us2.codeanyapp.com/accounts/login/*', ]
 
 # Application definition
 
