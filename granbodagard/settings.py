@@ -27,10 +27,10 @@ SECRET_KEY = 'django-insecure-orham#oo=p^_megn=etec^h&-851x8-s3r#e7ta+5x!nsfjwky
 DEBUG = True
 
 ALLOWED_HOSTS = [
-    'https://8000-groundbuild-granbodagar-s40komyvkbn.ws-eu98.gitpod.io/', 'http://localhost:8000/*', 'https://8000-groundbuild-granbodagar-s40komyvkbn.ws-eu98.gitpod.io/', 'https://8000-groundbuilder-granbodaga-e8nb80j0mj.us2.codeanyapp.com/admin/login/?next=/admin/', '8000-groundbuilder-granbodaga-e8nb80j0mj.us2.codeanyapp.com', 'https://8000-groundbuilder-granbodaga-e8nb80j0mj.us2.codeanyapp.com', 'localhost', ]
+    'https://8000-groundbuild-granbodagar-vfkuolcj94r.ws-eu98.gitpod.io/', 'http://localhost:8000/*', 'https://8000-groundbuild-granbodagar-s40komyvkbn.ws-eu98.gitpod.io/', 'https://8000-groundbuilder-granbodaga-e8nb80j0mj.us2.codeanyapp.com/admin/login/?next=/admin/', '8000-groundbuilder-granbodaga-e8nb80j0mj.us2.codeanyapp.com', 'https://8000-groundbuilder-granbodaga-e8nb80j0mj.us2.codeanyapp.com', 'localhost', ]
 
 
-CSRF_TRUSTED_ORIGINS=['https://8000-groundbuilder-granbodaga-e8nb80j0mj.us2.codeanyapp.com/*', 'https://8000-groundbuild-granbodagar-s40komyvkbn.ws-eu98.gitpod.io/*', 'http://localhost:8000/*',]
+CSRF_TRUSTED_ORIGINS=['https://8000-groundbuild-granbodagar-vfkuolcj94r.ws-eu98.gitpod.io/*', 'https://8000-groundbuild-vfkuolcj94r.ws-eu98.gitpod.io/*', 'http://localhost:8000/*',]
 
 # Application definition
 
@@ -166,6 +166,10 @@ USE_TZ = True
 # https://docs.djangoproject.com/en/3.2/howto/static-files/
 
 STATIC_URL = '/static/'
+STATICFILES_DIRS = (os.path.join(BASE_DIR, 'static'),)
+
+MEDIA_URL = '/media/'
+MEDIA_ROOT = os.path.join(BASE_DIR, 'media')
 
 # Default primary key field type
 # https://docs.djangoproject.com/en/3.2/ref/settings/#default-auto-field
