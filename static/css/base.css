@@ -8,13 +8,6 @@ body {
     height: calc(100vh - 164px);
 }
 
-div {
-    background-color: #000;
-    font-size: large;
-    border-left: 40px solid;
-
-}
-
 ul {
     list-style-type: none;
 }
