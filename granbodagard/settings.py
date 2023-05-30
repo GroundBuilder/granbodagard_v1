@@ -47,6 +47,7 @@ INSTALLED_APPS = [
     'allauth.socialaccount',
     'allauth.socialaccount.providers.instagram',
     'home',
+    'courses',
 ]
 
 MIDDLEWARE = [

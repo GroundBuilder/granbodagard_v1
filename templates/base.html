@@ -42,15 +42,18 @@
 <body>
     <header class="container-fluid fixed-top">
         <div class="row bg-info pt-lg-2 d-none d-lg-flex">
-            <div class="col-12 col-lg-3 my-auto py-1 py-lg-0 text-center text-lg-left">
-                <a href="{% url 'home' %}" class="nav-link main-logo-link">
-                    <h2 class="logo-font text-black my-0">
-                        <strong>Gränboda gård</strong>
-                    </h2>
-                </a>
+            <div class="navbar col-12 col-lg-3 my-auto py-1 py-lg-0 text-center text-lg-left">
+                <div class="container-fluid">
+                    <a href="{% url 'home' %}" class="nav-link main-logo-link">
+                        <img src="../media/logo_brand.jpg" alt="Logo" width="50" height="50" class="align-text-top d-inline-block">
+                        <h2 class="logo-font text-black my-0">
+                            <strong>Gränboda gård</strong>
+                        </h2>
+                    </a>
+                </div>
             </div>
             <div class="col-12 my-auto py-1 py-lg-0 col-lg-3">
-                <div>
+                <div class="">
                     <ul>
                         <li>Courses</li>
                         <li>About Us</li>

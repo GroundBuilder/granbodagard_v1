@@ -49,13 +49,14 @@ Commands:
 pip3 install django - done<br>
 django-admin startproject granbodagard . -  done<br>
 pip3 install django-allauth - done<br>
+pip3 install Pillow - done <br>
 pip3 install dj_database_url psycopg2 <br>
 pip3 install dj3-cloudinary-storage <br>
 pip3 install django-crispy-forms <br>
 pip3 install django-summernote <br>
 pip3 install django-allauth <br>
 pip install crispy-bootstrap5 <br>
-pip3 install Pillow <br>
+
 
 pip3 freeze > requirements.txt <br>
 
