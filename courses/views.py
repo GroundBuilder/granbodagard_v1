@@ -5,7 +5,7 @@ from .models import Course, Category
 # Create your views here.
 
 def all_courses(request):
-    """ A view to show all products, including sorting and search queries. """
+    """ A view to show all courses, including sorting and search queries. """
 
     courses = Course.objects.all()
 
