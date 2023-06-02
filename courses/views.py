@@ -1,4 +1,4 @@
-from django.shortcuts import render
+from django.shortcuts import render, get_object_or_404
 
 from .models import Course, Category
 
@@ -14,3 +14,15 @@ def all_courses(request):
     }
 
     return render(request, 'courses/courses.html', context)
+
+
+def course_details(request, course_id):
+    """ A view to show the course with details. """
+
+    course = get_object_or_404(Corse, pk=course_id)
+
+    context = {
+        'course': course,
+    }
+
+    return render(request, 'courses/course_details.html', context)
