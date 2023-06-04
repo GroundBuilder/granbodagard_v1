@@ -19,7 +19,7 @@ def all_courses(request):
 def course_details(request, course_id):
     """ A view to show the course with details. """
 
-    course = get_object_or_404(Corse, pk=course_id)
+    course = get_object_or_404(Course, pk=course_id)
 
     context = {
         'course': course,
