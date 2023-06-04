@@ -1,11 +1,20 @@
-from django.shortcuts import render, get_object_or_404
-
+from django.shortcuts import render, redirect, reverse, get_object_or_404
+from django.contrib import messages
+from django.db.models import Q
 from .models import Course, Category
 
 # Create your views here.
 
 def all_courses(request):
     """ A view to show all courses, including sorting and search queries. """
+
+    if request.GET:
+
+        if 'q' in request.GET:
+            query = request.GET['q']
+            if not query:
+                messages.error(request, "You didn't enter any search critera!")
+                return redirect(reverse('products'))
 
     courses = Course.objects.all()
 
