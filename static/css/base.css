@@ -22,6 +22,10 @@ ul {
     z-index: -1;
 }
 
+.text-black {
+    color: #000 !important;
+}
+
 /* ----- Media Queries ------ */
 
 /* Slightly larger container on xl screens */
