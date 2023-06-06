@@ -14,12 +14,12 @@
         Courses
         </button>
         <ul class="dropdown-menu">
-            <li><a class="dropdown-item" href="{% url 'courses' %}">All courses</a></li>
-            <li><a class="dropdown-item" href="#">Alpaca</a></li>
-            <li><a class="dropdown-item" href="#">Chicken</a></li>
-            <li><a class="dropdown-item" href="#">Hourses</a></li>
-            <li><a class="dropdown-item" href="#">Tomatoes</a></li>
-            <li><a class="dropdown-item" href="#">Gardening</a></li>
+            <li><a class="dropdown-item" href="{% url 'courses' %}?category=animals,gardening,horses,tomatoes">All courses</a></li>
+            <li><a class="dropdown-item" href="{% url 'courses' %}?category=animals">Animals</a></li>
+            <li><a class="dropdown-item" href="{% url 'courses' %}?category=gardening">Gardening</a></li>
+            <li><a class="dropdown-item" href="{% url 'courses' %}?category=horses">Horses</a></li>
+            <li><a class="dropdown-item" href="{% url 'courses' %}?category=tomatoes">Tomatoes</a></li>
+            <li><a class="dropdown-item" href="{% url 'courses' %}?category=chickens">Chickens</a></li>
         </ul>
     </div>
 </div>
