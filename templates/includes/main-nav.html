@@ -20,6 +20,9 @@
             <li><a class="dropdown-item" href="{% url 'courses' %}?category=horses">Horses</a></li>
             <li><a class="dropdown-item" href="{% url 'courses' %}?category=tomatoes">Tomatoes</a></li>
             <li><a class="dropdown-item" href="{% url 'courses' %}?category=chickens">Chickens</a></li>
+            <li><a href="{% url 'courses' %}?sort=price&direction=asc" class="dropdown-item">Sort By Price</a></li>
+            <li><a href="{% url 'courses' %}?sort=rating&direction=desc" class="dropdown-item ">Sort By Rating</a></li>
+            <li><a href="{% url 'courses' %}?sort=category&direction=asc" class="dropdown-item ">Sort By Category</a></li>
         </ul>
     </div>
 </div>
