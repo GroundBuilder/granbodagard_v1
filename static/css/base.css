@@ -12,6 +12,18 @@ ul {
     list-style-type: none;
 }
 
+.btt-button {
+    height: 42px;
+    width: 42px;
+    position: fixed;
+    bottom: 10px;
+    right: 10px;
+}
+
+.btt-link {
+    cursor: pointer;
+}
+
 .overlay {
     height: 100%;
     width: 100%;
