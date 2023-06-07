@@ -48,6 +48,7 @@ INSTALLED_APPS = [
     'allauth.socialaccount.providers.instagram',
     'home',
     'courses',
+    'shoppingbag',
 ]
 
 MIDDLEWARE = [
@@ -76,6 +77,7 @@ TEMPLATES = [
                 'django.template.context_processors.request',    # Django-allauth required
                 'django.contrib.auth.context_processors.auth',
                 'django.contrib.messages.context_processors.messages',
+                'shoppingbag.contexts.shoppingbag_contents',
             ],
         },
     },
@@ -176,3 +178,6 @@ MEDIA_ROOT = os.path.join(BASE_DIR, 'media')
 # https://docs.djangoproject.com/en/3.2/ref/settings/#default-auto-field
 
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
+
+FREE_DELIVERY_THRESHOLD = 50
+STANDARD_DELIVERY_PERCENTAGE = 10
