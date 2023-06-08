@@ -87,3 +87,29 @@ A Django model defines the fields and data behaviour's of the structured databas
 
 https://learn.codeinstitute.net/courses/course-v1:CodeInstitute+ECOMM_PAGPPF+2021_Q2/courseware/c38cb7ad50e9443dbd94f4cef3fed1ae/0b467723b3f54a5db85c975fdf67116d/
 
+    
+    
+
+
+    size = None
+    if 'course_size' in request.POST:
+        size = request.POST['course_size']
+
+
+    if size:
+        if item_id in list(shoppingbag.keys()):
+            if size in shoppingbag[item_id]['items_by_size'].keys():
+                shoppingbag[item_id]['items_by_size'][size] += quantity
+            else:
+                shoppingbag[item_id]['items_by_size'][size] = quantity
+        else:
+            shoppingbag[item_id] = {'items_by_size': {size: quantity}}
+    else:
+        if item_id in list(shoppingbag.keys()):
+            shoppingbag[item_id] += quantity
+        else:
+            shoppingbag[item_id] = quantity
+            messages.success(request, f'Added {course.name}')
+
+
+{% url 'add_to_shoppingbag' course.id %}
