@@ -111,5 +111,3 @@ https://learn.codeinstitute.net/courses/course-v1:CodeInstitute+ECOMM_PAGPPF+202
             shoppingbag[item_id] = quantity
             messages.success(request, f'Added {course.name}')
 
-
-{% url 'add_to_shoppingbag' course.id %}

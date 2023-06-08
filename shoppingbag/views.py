@@ -19,17 +19,11 @@ def add_to_shoppingbag(request, item_id):
 
     shoppingbag = request.session.get('shoppingbag', {})
 
-# extra
-
     if item_id in list(shoppingbag.keys()):
         shoppingbag[item_id] += quantity
     else:
         shoppingbag[item_id] = quantity
-
-# end extra
-
-
-# input
+     #   messages.success(request, f'Added {course.name}')
 
 
 
