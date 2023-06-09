@@ -32,12 +32,12 @@
                             <th scope="col">Course Info</th>
                             <th scope="col"></th>
                             <th scope="col">Price</th>
-                            <th scope="col">Qty</th>
+                            <th scope="col">Person</th>
                             <th scope="col">Subtotal</th>
                         </tr>
                     </thead>
 
-                    {% for item in bag_items %}
+                    {% for item in shoppingbag_items %}
                         <tr>
                             <td class="p-3 w-25">
                                 <img class="img-fluid rounded" src="{{ item.course.image.url }}">
