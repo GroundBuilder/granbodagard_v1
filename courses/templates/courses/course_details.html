@@ -58,8 +58,7 @@
                                             </span>
                                         </button>
                                     </div>
-                                    <input class="form-control qty_input" id_qty_{{ course.id }} type="number" name="quantity" value="1"
-                                        min="1" max="99" id="id_qty_{{ course.id }}" data-item_id="{{ course.id }}">
+                                    <input class="form-control form-control-sm qty_input" type="number" name="quantity" value="{{ item.quantity }}" min="1" max="99" data-item_id="{{ item.item_id }}" id="id_qty_{{ item.item_id }}">
                                     <div class="input-group-append">
                                         <button class="increment-qty btn btn-black rounded-0" id="increment-qty_{{ course.id }}" data-item_id="{{ course.id }}">>
                                             <span class="icon">
@@ -78,7 +77,7 @@
                                 </span>
                                 <span class="text-uppercase">Keep Shopping</span>
                             </a>
-                            <input type="submit" class="btn btn-black rounded-0 text-uppercase mt-5" value="Add to Bag">
+                            <input type="submit" class="btn btn-black rounded-0 text-uppercase mt-5" value="Add to shopping Bag">
                         </div>
                         <input type="hidden" name="redirect_url" value="{{ request.path }}">
                     </div>
@@ -90,4 +89,6 @@
 {% endblock %}
 
 {% block postloadjs %}
+{{ block.super }}
+{% include 'courses/includes/quantity_input_script.html' %}
 {% endblock %}
