@@ -12,6 +12,11 @@ ul {
     list-style-type: none;
 }
 
+.btn-black {
+    background: black;
+    color: white;
+}
+
 .btt-button {
     height: 42px;
     width: 42px;

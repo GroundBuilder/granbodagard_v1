@@ -13,7 +13,7 @@ def view_shoppingbag(request):
 def add_to_shoppingbag(request, item_id):
     """ Add a quantity of the specified course to the shopping bag """
 
-# courses
+    course = Course.objects.get(pk=item_id)
     quantity = int(request.POST.get('quantity'))
     redirect_url = request.POST.get('redirect_url')
 
@@ -36,23 +36,12 @@ def adjust_shoppingbag(request, item_id):
     """Adjust the quantity of the specified course to the specified amount"""
 
     quantity = int(request.POST.get('quantity'))
-    size = None
-    if 'course_size' in request.POST:
-        size = request.POST['course_size']
     shoppingbag = request.session.get('shoppingbag', {})
 
-    if size:
-        if quantity > 0:
-            shoppingbag[item_id]['items_by_size'][size] = quantity
-        else:
-            del shoppingbag[item_id]['items_by_size'][size]
-            if not shoppingbag[item_id]['items_by_size']:
-                shoppingbag.pop(item_id)
+    if quantity > 0:
+        shoppingbag[item_id] = quantity
     else:
-        if quantity > 0:
-            shoppingbag[item_id] = quantity
-        else:
-            shoppingbag.pop(item_id)
+        shoppingbag.pop(item_id)
 
     request.session['shoppingbag'] = shoppingbag
     return redirect(reverse('view_shoppingbag'))
@@ -63,16 +52,9 @@ def remove_from_shoppingbag(request, item_id):
 
     try:
         size = None
-        if 'course_size' in request.POST:
-            size = request.POST['course_size']
         shoppingbag = request.session.get('shoppingbag', {})
 
-        if size:
-            del shoppingbag[item_id]['items_by_size'][size]
-            if not shoppingbag[item_id]['items_by_size']:
-                shoppingbag.pop(item_id)
-        else:
-            shoppingbag.pop(item_id)
+        shoppingbag.pop(item_id)
 
         request.session['shoppingbag'] = shoppingbag
         return HttpResponse(status=200)
