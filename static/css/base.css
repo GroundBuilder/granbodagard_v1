@@ -25,7 +25,9 @@ ul {
     right: 10px;
 }
 
-.btt-link {
+.btt-link,
+.update-link,
+.remove-item {
     cursor: pointer;
 }
 
@@ -34,6 +36,16 @@ ul {
     color: black !important;
     /* use important to override link colors for <a> elements */
     border: 1px solid black;
+}
+
+.shop-now-button:hover,
+.shop-now-button:active,
+.shop-now-button:focus,
+.btn-black:hover,
+.btn-black:active,
+.btn-black:focus {
+    background: #222;
+    color: white;
 }
 
 .overlay {
