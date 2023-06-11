@@ -13,8 +13,8 @@ def view_shoppingbag(request):
 def add_to_shoppingbag(request, item_id):
     """ Add a quantity of the specified course to the shopping bag """
 
-    course = Course.objects.get(pk=item_id)
     quantity = int(request.POST.get('quantity'))
+    course = Course.objects.get(pk=item_id)
     redirect_url = request.POST.get('redirect_url')
 
     shoppingbag = request.session.get('shoppingbag', {})
