@@ -24,7 +24,7 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 SECRET_KEY = 'django-insecure-orham#oo=p^_megn=etec^h&-851x8-s3r#e7ta+5x!nsfjwky'
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = True
+DEBUG = False
 
 ALLOWED_HOSTS = [
     'https://8000-groundbuild-granbodagar-vfkuolcj94r.ws-eu98.gitpod.io/', '8000-groundbuild-granbodagar-vfkuolcj94r.ws-eu99.gitpod.io', 'http://localhost:8000/*', 'https://8000-groundbuild-granbodagar-vfkuolcj94r.ws-eu99.gitpod.io/', 'https://8000-groundbuilder-granbodaga-e8nb80j0mj.us2.codeanyapp.com/admin/login/?next=/admin/', '8000-groundbuilder-granbodaga-e8nb80j0mj.us2.codeanyapp.com', 'https://8000-groundbuilder-granbodaga-e8nb80j0mj.us2.codeanyapp.com', 'localhost', '8000-groundbuild-granbodagar-vfkuolcj94r.ws-eu99.gitpod.io/*',]
