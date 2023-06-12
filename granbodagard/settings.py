@@ -29,10 +29,10 @@ SECRET_KEY = 'django-insecure-orham#oo=p^_megn=etec^h&-851x8-s3r#e7ta+5x!nsfjwky
 DEBUG = False
 
 ALLOWED_HOSTS = [
-    'https://8000-groundbuild-granbodagar-vfkuolcj94r.ws-eu98.gitpod.io/', '8000-groundbuild-granbodagar-vfkuolcj94r.ws-eu99.gitpod.io', 'http://localhost:8000/*', 'https://8000-groundbuild-granbodagar-vfkuolcj94r.ws-eu99.gitpod.io/', 'https://8000-groundbuilder-granbodaga-e8nb80j0mj.us2.codeanyapp.com/admin/login/?next=/admin/', '8000-groundbuilder-granbodaga-e8nb80j0mj.us2.codeanyapp.com', 'https://8000-groundbuilder-granbodaga-e8nb80j0mj.us2.codeanyapp.com', 'localhost', '8000-groundbuild-granbodagar-vfkuolcj94r.ws-eu99.gitpod.io/*',]
+    'https://8000-groundbuild-granbodagar-vfkuolcj94r.ws-eu98.gitpod.io/', '8000-groundbuild-granbodagar-vfkuolcj94r.ws-eu99.gitpod.io', 'http://localhost:8000/*','https://git.heroku.com/granbodagardv1.git','https://8000-groundbuild-granbodagar-vfkuolcj94r.ws-eu99.gitpod.io/', 'https://8000-groundbuilder-granbodaga-e8nb80j0mj.us2.codeanyapp.com', 'localhost', '8000-groundbuild-granbodagar-vfkuolcj94r.ws-eu99.gitpod.io/*',]
 
 
-CSRF_TRUSTED_ORIGINS=['https://8000-groundbuild-granbodagar-vfkuolcj94r.ws-eu99.gitpod.io/*', 'https://8000-groundbuild-vfkuolcj94r.ws-eu98.gitpod.io/*', 'http://localhost:8000/*',]
+CSRF_TRUSTED_ORIGINS=['https://8000-groundbuild-granbodagar-vfkuolcj94r.ws-eu99.gitpod.io/*', 'https://git.heroku.com/granbodagardv1.git', 'https://8000-groundbuild-vfkuolcj94r.ws-eu98.gitpod.io/*', 'http://localhost:8000/*',]
 
 # Application definition
 
