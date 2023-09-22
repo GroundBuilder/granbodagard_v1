@@ -12,21 +12,26 @@ https://docs.djangoproject.com/en/3.2/ref/settings/
 
 import os
 from pathlib import Path
+import dj_database_url
+if os.path.isfile('env.py'):
+    import env
 
 # Build paths inside the project like this: BASE_DIR / 'subdir'.
 BASE_DIR = Path(__file__).resolve().parent.parent
 
-# DISABLE_COLLECTSTATIC=1
+# Toggle this one below when deploy and go to
+# Heroku and delete the DISABLE_COLLECTSTATIC = 1 in Vars.
+X_FRAME_OPTIONS = 'SAMEORIGIN'
 
 
 # Quick-start development settings - unsuitable for production
 # See https://docs.djangoproject.com/en/3.2/howto/deployment/checklist/
 
 # SECURITY WARNING: keep the secret key used in production secret!
-SECRET_KEY = 'django-insecure-orham#oo=p^_megn=etec^h&-851x8-s3r#e7ta+5x!nsfjwky'
+SECRET_KEY = os.environ.get('SECRET_KEY')
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = False
+DEBUG = True
 
 ALLOWED_HOSTS = [
     'https://8000-groundbuild-granbodagar-vfkuolcj94r.ws-eu98.gitpod.io/', '8000-groundbuild-granbodagar-vfkuolcj94r.ws-eu99.gitpod.io', 'http://localhost:8000/*','https://git.heroku.com/granbodagardv1.git','https://8000-groundbuild-granbodagar-vfkuolcj94r.ws-eu99.gitpod.io/', 'https://8000-groundbuilder-granbodaga-e8nb80j0mj.us2.codeanyapp.com', 'localhost', '8000-groundbuild-granbodagar-vfkuolcj94r.ws-eu99.gitpod.io/*',]
