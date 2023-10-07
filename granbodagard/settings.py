@@ -85,6 +85,7 @@ TEMPLATES = [
                 'django.template.context_processors.request',    # Django-allauth required
                 'django.contrib.auth.context_processors.auth',
                 'django.contrib.messages.context_processors.messages',
+                'django.template.context_processors.request',    # Django-allauth required
                 'shoppingbag.contexts.shoppingbag_contents',
             ],
         },
@@ -93,7 +94,7 @@ TEMPLATES = [
 
 
 SOCIALACCOUNT_PROVIDERS = {
-    'google': {
+    'instagram': {
         # For each OAuth based provider, either add a ``SocialApp``
         # (``socialaccount`` app) containing the required client
         # credentials, or list them here:
