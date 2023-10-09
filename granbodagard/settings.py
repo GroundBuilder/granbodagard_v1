@@ -21,7 +21,7 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 
 # Toggle this one below when deploy and go to
 # Heroku and delete the DISABLE_COLLECTSTATIC = 1 in Vars.
-# X_FRAME_OPTIONS = 'SAMEORIGIN'
+X_FRAME_OPTIONS = 'SAMEORIGIN'
 
 
 # Quick-start development settings - unsuitable for production
