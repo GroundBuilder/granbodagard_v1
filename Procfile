@@ -1,1 +1,1 @@
-web: python3 manage.py
+web: gunicorn granbodagard.wsgi.application
