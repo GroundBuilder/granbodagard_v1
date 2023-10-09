@@ -21,7 +21,7 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 
 # Toggle this one below when deploy and go to
 # Heroku and delete the DISABLE_COLLECTSTATIC = 1 in Vars.
-X_FRAME_OPTIONS = 'SAMEORIGIN'
+# X_FRAME_OPTIONS = 'SAMEORIGIN'
 
 
 # Quick-start development settings - unsuitable for production
@@ -31,7 +31,7 @@ X_FRAME_OPTIONS = 'SAMEORIGIN'
 SECRET_KEY = os.environ.get('SECRET_KEY')
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = True
+DEBUG = False
 
 ALLOWED_HOSTS = [
     'https://8000-groundbuild-granbodagar-cxgd1zl95j8.ws-eu104.gitpod.io/', '8000-groundbuild-granbodagar-cxgd1zl95j8.ws-eu105.gitpod.io', 'http://localhost:8000/*','https://git.heroku.com/granbodagardv1.git','https://8000-groundbuild-granbodagar-vfkuolcj94r.ws-eu99.gitpod.io/', 'https://8000-groundbuilder-granbodaga-e8nb80j0mj.us2.codeanyapp.com', 'localhost', '8000-groundbuild-granbodagar-vfkuolcj94r.ws-eu99.gitpod.io/*',]
