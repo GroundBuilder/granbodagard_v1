@@ -200,4 +200,6 @@ to copy the URL
 * Special thanks to my mentor Gareth.
 
 
-To Procfile last ".application"
+To settings.py in top. Change back to this later.
+if os.path.isfile('env.py'):
+    import env
