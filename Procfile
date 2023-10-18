@@ -1,1 +1,1 @@
-web: gunicorn granbodagard.wsgi`:`application
+web: gunicorn granbodagard.wsgi.application
