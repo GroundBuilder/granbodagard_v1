@@ -38,7 +38,7 @@ ALLOWED_HOSTS = [
     'https://8000-groundbuild-granbodagar-cxgd1zl95j8.ws-eu104.gitpod.io/', '8000-groundbuild-granbodagar-cxgd1zl95j8.ws-eu105.gitpod.io', 'http://localhost:8000/*', 'https://granbodagardv1.herokuapp.com/', 'granbodagardv1.herokuapp.com', 'https://git.heroku.com/granbodagardv1.git','https://8000-groundbuild-granbodagar-vfkuolcj94r.ws-eu99.gitpod.io/', 'https://8000-groundbuilder-granbodaga-e8nb80j0mj.us2.codeanyapp.com', 'localhost', '8000-groundbuild-granbodagar-vfkuolcj94r.ws-eu99.gitpod.io/*',]
 
 
-CSRF_TRUSTED_ORIGINS=['https://8000-groundbuild-granbodagar-cxgd1zl95j8.ws-eu105.gitpod.io/*', 'https://git.heroku.com/granbodagardv1.git', 'https://8000-groundbuild-vfkuolcj94r.ws-eu98.gitpod.io/*', 'http://localhost:8000/*', 'https://granbodagardv1.herokuapp.com/', 'granbodagardv1.herokuapp.com',]
+CSRF_TRUSTED_ORIGINS=['https://8000-groundbuild-granbodagar-cxgd1zl95j8.ws-eu105.gitpod.io/*', 'https://git.heroku.com/granbodagardv1.git', 'https://8000-groundbuild-vfkuolcj94r.ws-eu98.gitpod.io/*', 'http://localhost:8000/*', 'https://granbodagardv1.herokuapp.com/',]
 
 # Application definition
 
@@ -135,17 +135,17 @@ WSGI_APPLICATION = 'granbodagard.wsgi.application'
 # Database
 # https://docs.djangoproject.com/en/3.2/ref/settings/#databases
 
-# if 'DATABASE_URL' in os.environ:
-#     DATABASES = {
-#         'default': dj_database_url.parse(os.environ.get('DATABASE_URL'))
-#     }
-# else:
-#     DATABASES = {
-#         'default': {
-#             'ENGINE': 'django.db.backends.sqlite3',
-#             'NAME': BASE_DIR / 'db.sqlite3',
-#         }
-#     }
+if 'DATABASE_URL' in os.environ:
+    DATABASES = {
+        'default': dj_database_url.parse(os.environ.get('DATABASE_URL'))
+    }
+else:
+    DATABASES = {
+        'default': {
+            'ENGINE': 'django.db.backends.sqlite3',
+            'NAME': BASE_DIR / 'db.sqlite3',
+        }
+    }
 
 
 # Password validation
@@ -186,7 +186,6 @@ USE_TZ = True
 
 STATIC_URL = '/static/'
 STATICFILES_DIRS = (os.path.join(BASE_DIR, 'static'),)
-STATIC_ROOT = os.path.join(BASE_DIR, 'static')
 
 MEDIA_URL = '/media/'
 MEDIA_ROOT = os.path.join(BASE_DIR, 'media')
