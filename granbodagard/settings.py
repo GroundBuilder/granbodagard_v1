@@ -16,7 +16,6 @@ import dj_database_url
 if os.path.isfile('env.py'):
     import env
 
-
 # Build paths inside the project like this: BASE_DIR / 'subdir'.
 BASE_DIR = Path(__file__).resolve().parent.parent
 
@@ -35,10 +34,10 @@ SECRET_KEY = os.environ.get('SECRET_KEY')
 DEBUG = True
 
 ALLOWED_HOSTS = [
-    'https://8000-groundbuild-granbodagar-cxgd1zl95j8.ws-eu104.gitpod.io/', '8000-groundbuild-granbodagar-cxgd1zl95j8.ws-eu105.gitpod.io', 'http://localhost:8000/*', 'https://granbodagardv1.herokuapp.com/', 'granbodagardv1.herokuapp.com', 'https://git.heroku.com/granbodagardv1.git','https://8000-groundbuild-granbodagar-vfkuolcj94r.ws-eu99.gitpod.io/', 'https://8000-groundbuilder-granbodaga-e8nb80j0mj.us2.codeanyapp.com', 'localhost', '8000-groundbuild-granbodagar-vfkuolcj94r.ws-eu99.gitpod.io/*',]
+    'https://8000-groundbuild-granbodagar-cxgd1zl95j8.ws-eu105.gitpod.io/', '8000-groundbuild-granbodagar-cxgd1zl95j8.ws-eu105.gitpod.io', 'http://localhost:8000/*','https://git.heroku.com/granbodagardv1.git','https://8000-groundbuild-granbodagar-vfkuolcj94r.ws-eu99.gitpod.io/', 'https://8000-groundbuilder-granbodaga-e8nb80j0mj.us2.codeanyapp.com', 'localhost', '8000-groundbuild-granbodagar-vfkuolcj94r.ws-eu99.gitpod.io/*',]
 
 
-CSRF_TRUSTED_ORIGINS=['https://8000-groundbuild-granbodagar-cxgd1zl95j8.ws-eu105.gitpod.io/*', 'https://git.heroku.com/granbodagardv1.git', 'https://8000-groundbuild-vfkuolcj94r.ws-eu98.gitpod.io/*', 'http://localhost:8000/*', 'https://granbodagardv1.herokuapp.com/',]
+CSRF_TRUSTED_ORIGINS=['https://8000-groundbuild-granbodagar-cxgd1zl95j8.ws-eu105.gitpod.io/*', 'https://git.heroku.com/granbodagardv1.git', 'https://8000-groundbuild-vfkuolcj94r.ws-eu98.gitpod.io/*', 'http://localhost:8000/*',]
 
 # Application definition
 
@@ -126,8 +125,7 @@ ACCOUNT_EMAIL_VERIFICATION = 'mandatory'
 ACCOUNT_SIGNUP_EMAIL_ENTER_TWICE = True
 ACCOUNT_USERNAME_MIN_LENGTH = 4
 LOGIN_URL = '/accounts/login/'
-LOGIN_REDIRECT_URL = '/'    # Brings me back to home page
-LOGOUT_REDIRECT_URL = '/'   # Brings me back to home page
+LOGIN_REDIRECT_URL = '/'
 
 WSGI_APPLICATION = 'granbodagard.wsgi.application'
 
@@ -135,17 +133,12 @@ WSGI_APPLICATION = 'granbodagard.wsgi.application'
 # Database
 # https://docs.djangoproject.com/en/3.2/ref/settings/#databases
 
-if 'DATABASE_URL' in os.environ:
-    DATABASES = {
-        'default': dj_database_url.parse(os.environ.get('DATABASE_URL'))
+DATABASES = {
+    'default': {
+        'ENGINE': 'django.db.backends.sqlite3',
+        'NAME': BASE_DIR / 'db.sqlite3',
     }
-else:
-    DATABASES = {
-        'default': {
-            'ENGINE': 'django.db.backends.sqlite3',
-            'NAME': BASE_DIR / 'db.sqlite3',
-        }
-    }
+}
 
 
 # Password validation
