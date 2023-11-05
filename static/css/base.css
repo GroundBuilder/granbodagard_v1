@@ -2,8 +2,9 @@ html {
     height: 100%;
 }
 
+/* ../../media/background_alpackor_granboda_owner.jpg */
 body {
-    background: url('../../media/background_alpackor_granboda_owner.jpg') no-repeat center center fixed; 
+    background: url('/workspace/granbodagard_v1/media/background_alpackor_granboda_owner.jpg') no-repeat center center fixed;
     background-size: cover;
     height: calc(100vh - 164px);
 }
