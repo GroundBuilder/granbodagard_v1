@@ -4,13 +4,13 @@ Portfolio Project 5 for Code Institute Full-stack development program.
 This project is a Full Stack website built using the Django framework. Granbodagård is a farm where visitors can come and buy courses that they are holding.
 There is detailed about every course what you will expect from it. When its going to happen.
 
-[Live Project Here](https://to-be-ahead-blog.herokuapp.com/)
+[Live Project Here](https://granbodagardv1.herokuapp.com/)
 
-![MockUp](docs/readme_images/mockup-tobeaheadblog.png)<br>
+![MockUp](docs/readme_images/yyy.png)<br>
 
 README Table Content
 
-- [To Be Ahead - Introduction](#to-be-ahead-blog---introduction)
+- [Granbodagard - Introduction](#yyy---introduction)
 - [User Experience - UX](#user-experience---ux)
 
 - [Design](#design)
@@ -39,13 +39,13 @@ README Table Content
 
 ## User Experience - UX
 
-![UX - Project](docs/readme_images/ux-design1.png)<br>
+![UX - Project](docs/readme_images/yyy.png)<br>
 
-![UX - Issues](docs/readme_images/ux-design2.png)<br>
+![UX - Issues](docs/readme_images/yyy.png)<br>
 
 ## Design
 
-![Colours Palete](docs/readme_images/colors_tobeahead.png)<br>
+![Colours Palete](docs/readme_images/yyy.png)<br>
 
 
 ## Features
@@ -80,6 +80,8 @@ README Table Content
 * [Allauth](https://django-allauth.readthedocs.io/en/latest/installation.html)<br>
    For authentication, registration, account
    management
+* [WhiteNoise](https://whitenoise.readthedocs.io/en/latest/)<br>
+   For getting my static to work in Heroku.
 
 
 ### Frameworks - Libraries - Programs Used
@@ -194,12 +196,8 @@ to copy the URL
 * [Stack Overflow](https://stackoverflow.com/)
 * [Django](https://docs.djangoproject.com/en/4.2/)
 * [Dev](https://www.devhandbook.com/django/user-profile/)
+* [Bing](https://www.bing.com/images/create?FORM=IRPGEN)
 
 ## Special Thanks
 
 * Special thanks to my mentor Gareth.
-
-
-To settings.py in top. Change back to this later.
-if os.path.isfile('env.py'):
-    import env
