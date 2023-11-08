@@ -31,13 +31,13 @@ X_FRAME_OPTIONS = 'SAMEORIGIN'
 SECRET_KEY = os.environ.get('SECRET_KEY')
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = True
+DEBUG = False
 
 ALLOWED_HOSTS = [
-    'https://8000-groundbuild-granbodagar-cxgd1zl95j8.ws-eu105.gitpod.io/', '8000-groundbuild-granbodagar-cxgd1zl95j8.ws-eu105.gitpod.io', 'http://localhost:8000/*','https://git.heroku.com/granbodagardv1.git','https://granbodagardv1.herokuapp.com/', 'granbodagardv1.herokuapp.com', 'localhost', '8000-groundbuild-granbodagar-vfkuolcj94r.ws-eu99.gitpod.io/*',]
+    'https://https://8000-groundbuild-granbodagar-cxgd1zl95j8.ws-eu106.gitpod.io/', '8000-groundbuild-granbodagar-cxgd1zl95j8.ws-eu106.gitpod.io', 'http://localhost:8000/*','https://git.heroku.com/granbodagardv1.git','https://granbodagardv1.herokuapp.com/', 'granbodagardv1.herokuapp.com', 'localhost', '8000-groundbuild-granbodagar-vfkuolcj94r.ws-eu99.gitpod.io/*',]
 
 
-CSRF_TRUSTED_ORIGINS=['https://8000-groundbuild-granbodagar-cxgd1zl95j8.ws-eu105.gitpod.io/*', 'https://git.heroku.com/granbodagardv1.git', 'https://8000-groundbuild-vfkuolcj94r.ws-eu98.gitpod.io/*', 'http://localhost:8000/*', 'https://granbodagardv1.herokuapp.com/*']
+CSRF_TRUSTED_ORIGINS=['https://8000-groundbuild-granbodagar-cxgd1zl95j8.ws-eu106.gitpod.io/*', 'https://git.heroku.com/granbodagardv1.git', 'https://8000-groundbuild-vfkuolcj94r.ws-eu98.gitpod.io/*', 'http://localhost:8000/*', 'https://granbodagardv1.herokuapp.com/*']
 
 # Application definition
 
